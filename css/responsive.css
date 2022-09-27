@@ -1,0 +1,164 @@
+/* RESPONSIVE */
+
+@media screen and (max-width: 1400px) {
+    .contenedor-sobre-nosotros {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .textos-header {
+        display: flex;
+        height: 850px;
+    }
+
+    .-image-about-us {
+        width: 40%;
+    }
+
+    .sobre-nosotros .contenido-textos {
+        color: black
+    }
+}
+
+@media screen and (max-width:900px) {
+    header {
+        background-position: center;
+    }
+
+    nav {
+        text-align: center;
+        padding: 5px 50px 0 50px;
+    }
+
+    .contenedor-sobre-nosotros {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre-nosotros .contenido-textos {
+        width: 90%;
+    }
+
+    .imagen-about-us {
+        width: 70%;
+    }
+
+    /* ------------------------------------------------- PROJECTS ------------------------------------------------- */
+
+    .imagen-port {
+        width: 44%;
+    }
+
+    /* ------------------------------------------------- SOFTWARE KNOWLEDGE ------------------------------------------------- */
+    .slider .slide-track {
+        animation: scroll 20s linear infinite;
+        width: calc(250px * 15);
+    }
+
+    img {
+        width: 77px;
+    }
+
+    .html {
+        width: 85px;
+    }
+
+    /* ------------------------------------------------- EXPERIENCE AND CV ------------------------------------------------- */
+
+    .cvs {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .cv-div {
+        width: 50%;
+        text-align: center;
+    }
+
+    .cv-div:nth-child(1),
+    .cv-div:nth-child(2) {
+        margin-bottom: 60px;
+    }
+
+    .cv-div {
+        width: 80%;
+        text-align: center;
+    }
+
+    .cv-div img {
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    nav {
+        text-align: center;
+        padding: 5px 50px 0 50px;
+    }
+
+    nav>a {
+        margin-right: 5px;
+    }
+
+    .textos-header h1 {
+        font-size: 35px;
+    }
+
+    .textos-header h2 {
+        font-size: 20px;
+    }
+
+    /* ------------------------------------------------- ABOUT US ------------------------------------------------- */
+
+    .imagen-about-us {
+        margin-bottom: 60px;
+        width: 99%;
+    }
+
+    .sobre-nosotros .contenido-textos {
+        width: 95%;
+    }
+
+    /* ------------------------------------------------- PROJECTS ------------------------------------------------- */
+
+    .imagen-port {
+        width: 100%;
+    }
+
+    /* ------------------------------------------------- SOFTWARE KNOWLEDGE ------------------------------------------------- */
+    .slider .slide-track {
+        animation: scroll 20s linear infinite;
+        width: calc(250px * 12);
+    }
+
+    img {
+        width: 67px;
+    }
+
+    .html {
+        width: 75px;
+    }
+
+    /* ------------------------------------------------- WORKING EXPERIENCE ------------------------------------------------- */
+    .cv-div {
+        width: 80%;
+        text-align: center;
+    }
+
+
+
+    /* ------------------------------------------------- FOOTER ------------------------------------------------- */
+
+    .contenedor-footer {
+        flex-direction: column;
+    }
+
+    .content-foo {
+        margin-bottom: 2px;
+        text-align: center;
+    }
+
+}
