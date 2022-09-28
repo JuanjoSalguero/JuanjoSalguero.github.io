@@ -102,6 +102,14 @@
     nav>a {
         margin-right: 5px;
     }
+    #navbar .item {
+        display: none;
+    }
+    
+    
+    #navbar .menu.active .item {
+        display: list-item;
+    }
 
     .textos-header h1 {
         font-size: 35px;

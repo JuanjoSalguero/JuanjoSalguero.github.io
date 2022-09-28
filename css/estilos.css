@@ -110,15 +110,6 @@ a:hover,
     display: block;
 }
 
-#navbar .item {
-    display: none;
-}
-
-
-#navbar .menu.active .item {
-    display: list-item;
-}
-
 /* Tablet menu */
 @media all and (min-width: 700px) {
 
