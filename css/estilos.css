@@ -2,7 +2,6 @@
 :root {
     --colour-white: #f0f0f0;
     --colour-yellow: #e0c218;
-    --coulour-gray: #303841;
 }
 
 * {
@@ -58,7 +57,7 @@ nav {
 }
 
 a {
-    color: white;
+    color: var(--colour-white);
     text-decoration: none;
 }
 
