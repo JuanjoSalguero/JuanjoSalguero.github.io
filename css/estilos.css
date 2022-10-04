@@ -174,31 +174,6 @@ header .textos-header {
     color: var(--colour-yellow);
 }
 
-/* Autotype animation*/
-
-.job {
-    display: block;
-    white-space: nowrap;
-    border-right: 2px solid;
-    width: 16ch;
-
-    animation: typing 3s steps(16),
-        blink .5s infinite step-end alternate;
-    overflow: hidden;
-}
-
-@keyframes typing {
-    from {
-        width: 0;
-    }
-}
-
-@keyframes blink {
-    50% {
-        border-color: transparent;
-    }
-}
-
 /* ------------------------------------------------- ABOUT ME -------------------------------------------------*/
 main {
     background: var(--colour-white);
@@ -279,6 +254,11 @@ main .sobre-nosotros {
     height: calc(100% - 60px);
     width: 100%;
     object-fit: cover;
+}
+
+.project-image:hover{
+    opacity: 0.7;
+    transition: 0.3s;
 }
 
 .project-title {
@@ -400,7 +380,7 @@ img {
 .cv-div img {
     margin-top: 40px;
     width: 90%;
-    cursor: pointer;
+    cursor: zoom-in;
 }
 
 .cv-div>img:hover{
