@@ -2,6 +2,7 @@
 :root {
     --colour-white: #f0f0f0;
     --colour-yellow: #e0c218;
+    --colour-gray: #484848;
 }
 
 * {
@@ -73,7 +74,7 @@ nav ul img {
     padding: 14px;
 }
 
-a:hover,
+nav>ul>li>a:hover,
 .item a:hover::after {
     transition: 0.3s;
     color: var(--colour-yellow);
@@ -232,68 +233,89 @@ main .sobre-nosotros {
 
 /* ------------------------------------------------- PROJECTS ------------------------------------------------- */
 
-.portafolio {
+.projects-section {
+    text-align: center;
+    padding: 160px 32px;
     background-color: black;
     background-image: url(../img/marmol.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
-.galeria-port {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.projects-section-header {
+    max-width: 640px;
+    margin: 0 auto 96px auto;
+    border-bottom: 3.2px solid var(--colour-white);
 }
 
-.imagen-port {
-    width: 24%;
-    margin-bottom: 15px;
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
-}
-
-#show-more {
-    box-shadow: none;
-}
-
-.imagen-port>img {
+/* "Automagic" image grid using no media queries */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 64px;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 96px;
 }
 
-.hover-galeria {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    transform: scale(0);
-    background: #e0c21863;
-    transition: transform .5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.project {
+    background: var(--colour-gray);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
 }
 
-.hover-galeria img {
-    width: 80px;
+.code {
+    color: var(--colour-gray);
+    transition: color 0.3s ease-out;
 }
 
-.hover-galeria p {
-    color: black;
+.project:hover .code {
+    color: var(--colour-yellow);
     font-weight: 600;
 }
 
-.imagen-port:hover .hover-galeria {
-    transform: scale(1.0);
-    border: 3px solid var(--colour-yellow);
+.project-image {
+    height: calc(100% - 60px);
+    width: 100%;
+    object-fit: cover;
 }
 
-/* SLIDER */
+.project-title {
+    font-size: 16px;
+    padding: 12px 8px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 16px 32px;
+    border-radius: 2px;
+    border: solid 2px var(--colour-yellow);
+}
+
+.btn-show-all {
+    font-size: 16px;
+    background: var(--colour-gray);
+}
+
+.btn-show-all:hover {
+    font-weight: 600;
+    background: var(--colour-yellow);
+    color: black;
+    
+}
+
+.btn-show-all:hover>i {
+    transform: translateX(4px);
+}
+
+.btn-show-all>i {
+    margin-left: 10px;
+    transform: translateX(0);
+    transition: transform 0.3s ease-out;
+}
+
+/* ------------------------------------------------- LANGUAGES // SLIDER ------------------------------------------------- */
 .slider {
     height: 250px;
     margin: auto;
@@ -379,6 +401,13 @@ img {
     margin-top: 40px;
     width: 90%;
     cursor: pointer;
+}
+
+.cv-div>img:hover{
+    opacity: 0.9;
+    transition: 0.3s;
+    transform: scale(1.02);
+
 }
 
 .cv-div h3 {
@@ -472,13 +501,6 @@ img {
     cursor: pointer;
 }
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px) {
-    .modal-content {
-        width: 100%;
-    }
-}
-
 /* ------------------------------------------------- FOOTER ------------------------------------------------- */
 
 footer {
@@ -517,9 +539,12 @@ footer>p {
     font-size: 20px;
 }
 
+footer>p>a:hover,
+.content-foo>a:hover,
 .content-foo:hover {
     transition: 0.5s;
     transform: translateY(4px);
+    color: var(--colour-yellow);
 }
 
 .final-logo {
@@ -541,3 +566,4 @@ footer>p {
 .author {
     color: var(--colour-yellow);
 }
+
