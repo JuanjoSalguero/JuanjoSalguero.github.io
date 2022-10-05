@@ -184,7 +184,7 @@ main {
 }
 
 main .sobre-nosotros {
-    padding: 30px 10px 0 0;
+    padding: 50px 10px 0 0;
     max-width: 1250px;
 }
 
@@ -200,7 +200,7 @@ main .sobre-nosotros {
 .sobre-nosotros .contenido-textos {
     padding-top: 50px;
     padding-bottom: 60px;
-    width: 48%;
+    width: 55%;
     color: var(--colour-white);
     text-align: justify;
 }
@@ -210,7 +210,7 @@ main .sobre-nosotros {
 
 .projects-section {
     text-align: center;
-    padding: 160px 32px;
+    padding: 50px 32px;
     background-color: black;
     background-image: url(../img/marmol.jpg);
     background-size: 100%;
