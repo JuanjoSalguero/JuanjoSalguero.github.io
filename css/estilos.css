@@ -1,7 +1,7 @@
 /* Custom colours  */
 :root {
     --colour-white: #f0f0f0;
-    --colour-yellow: #e0c218;
+    --colour-yellow: #F8BC38;
     --colour-gray: #484848;
 }
 
@@ -12,7 +12,7 @@
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
 }
 
 body {
@@ -51,10 +51,10 @@ header {
 /* Basic styling */
 nav {
     background-color: black;
-    padding: 2px 199px;
+    padding: 2px 300px;
     position: fixed;
     width: 100%;
-    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     transition: top 0.3s;
 }
 
@@ -71,13 +71,16 @@ nav ul img {
     width: 50px;
 }
 
+.logo-a{
+    text-align: left;
+}
+
 .item {
     padding: 14px;
 }
 
 nav>ul>li>a:hover,
 .item a:hover::after {
-    transition: 0.3s;
     color: var(--colour-yellow);
     font-weight: 800;
 }
@@ -115,7 +118,7 @@ nav>ul>li>a:hover,
 /* ------------------------------------------------- HOME ------------------------------------------------- */
 header .textos-header {
     display: flex;
-    height: 750px;
+    height: 890px;
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -196,8 +199,8 @@ main .sobre-nosotros {
 
 .project {
     background: var(--colour-gray);
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
 }
 
 .code {
@@ -214,11 +217,14 @@ main .sobre-nosotros {
     height: calc(100% - 60px);
     width: 100%;
     object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+    cursor: url(/img/pointermini.png), auto;
+    transition:  0.3s ease-out;
+    
 }
 
 .project-image:hover{
     opacity: 0.7;
-    transition: 0.3s;
 }
 
 .project-title {
@@ -229,20 +235,21 @@ main .sobre-nosotros {
 .btn {
     display: inline-block;
     padding: 16px 32px;
-    border-radius: 2px;
+    border-radius: 10px;
     border: solid 2px var(--colour-yellow);
 }
 
 .btn-show-all {
-    font-size: 16px;
+    font-size: 20px;
     background: var(--colour-gray);
+    transition: background 0.5s ease-out;
 }
 
 .btn-show-all:hover {
     font-weight: 600;
     background: var(--colour-yellow);
     color: black;
-    
+    pointer-events: fill;    
 }
 
 .btn-show-all:hover>i {
@@ -339,14 +346,15 @@ img {
 .cv-div img {
     margin-top: 40px;
     width: 90%;
-    cursor: zoom-in;
+    cursor: url(/img/zoom.png), auto;
+    transition: 0.5s ease-out;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 10px;
 }
 
 .cv-div>img:hover{
-    opacity: 0.9;
-    transition: 0.3s;
-    transform: scale(1.02);
-
+    transform: scale(1.03);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .cv-div h3 {
@@ -427,7 +435,7 @@ img {
     position: absolute;
     top: 15px;
     right: 35px;
-    color: #f1f1f1;
+    color: var(--colour-white);
     font-size: 40px;
     font-weight: bold;
     transition: 0.3s;
@@ -435,7 +443,7 @@ img {
 
 .close:hover,
 .close:focus {
-    color: #bbb;
+    color: red;
     text-decoration: none;
     cursor: pointer;
 }
@@ -448,7 +456,7 @@ footer {
     overflow: hidden;
     width: 100%;
     background-color: #000;
-    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    background-image:radial-gradient(var(--colour-gray) 0%, black 100%);
 }
 
 iframe {
@@ -476,15 +484,17 @@ footer>p {
 .content-foo {
     padding: 12px;
     font-size: 20px;
+    transition: 0.3s ease-out;
 }
+
 
 footer>p>a:hover,
 .content-foo>a:hover,
 .content-foo:hover {
-    transition: 0.5s;
     transform: translateY(4px);
     color: var(--colour-yellow);
 }
+
 
 .final-logo {
     display: flex;
