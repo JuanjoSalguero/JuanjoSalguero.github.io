@@ -23,6 +23,30 @@
     }
 }
 
+/* ------------------------------------------------- 960px ------------------------------------------------- */
+@media all and (min-width: 960px) {
+    .menu {
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        background: none;
+    }
+
+    .logo {
+        order: 0;
+    }
+
+    .item {
+        order: 1;
+        position: relative;
+        display: block;
+        width: auto;
+    }
+
+    .toggle {
+        display: none;
+    }
+}
+
 /* ------------------------------------------------- 900px ------------------------------------------------- */
 @media all and (min-width: 900px) {
     .menu {
@@ -80,6 +104,20 @@
 
     #navbar .menu.active .item {
         display: list-item;
+    }
+
+    .menu {
+        justify-content: center;
+    }
+
+    .logo {
+        flex: 1;
+    }
+
+    .toggle {
+        flex: 1;
+        text-align: right;
+        order: 2;
     }
 
     .contenedor-sobre-nosotros {
