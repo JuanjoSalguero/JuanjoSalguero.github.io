@@ -24,6 +24,45 @@
 }
 
 /* ------------------------------------------------- 900px ------------------------------------------------- */
+@media all and (min-width: 900px) {
+    .menu {
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        background: none;
+    }
+
+    .logo {
+        order: 0;
+    }
+
+    .item {
+        order: 1;
+        position: relative;
+        display: block;
+        width: auto;
+    }
+
+    .toggle {
+        display: none;
+    }
+}
+
+@media all and (min-width: 900px) {
+
+    .menu {
+        justify-content: center;
+    }
+
+    .logo {
+        flex: 1;
+    }
+
+    .toggle {
+        flex: 1;
+        text-align: right;
+        order: 2;
+    }
+}
 
 @media screen and (max-width:900px) {
     header {
@@ -33,6 +72,14 @@
     nav {
         text-align: center;
         padding: 5px 50px 0 50px;
+    }
+    
+    #nvbar{
+        justify-content: space-round;
+    }
+
+    #navbar .menu.active .item {
+        display: list-item;
     }
 
     .contenedor-sobre-nosotros {
