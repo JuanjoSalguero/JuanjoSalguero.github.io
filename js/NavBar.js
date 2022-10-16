@@ -3,13 +3,14 @@ const menu = document.querySelector(".menu");
 
 /* Toggle mobile menu */
 function toggleMenu() {
-  menu.classList.toggle("active");
-  const icon = toggle.querySelector("a i.fas");
-  icon.classList.toggle('fa-bars');
-  icon.classList.toggle('fa-times');
+  if (menu.classList.contains("active")) {
+    menu.classList.remove("active");
+    toggle.querySelector("a").innerHTML = "<i class='fas fa-bars'></i>";
+  } else {
+    menu.classList.add("active");
+    toggle.querySelector("a").innerHTML = "<i class='fas fa-times'></i>";
+  }
 }
 
 /* Event Listeners */
-menu.addEventListener("click", toggleMenu, false);
-
-
+toggle.addEventListener("click", toggleMenu, false);

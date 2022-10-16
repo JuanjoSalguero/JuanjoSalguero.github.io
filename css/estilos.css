@@ -455,8 +455,8 @@ footer {
     margin: auto;
     overflow: hidden;
     width: 100%;
-    background-color: #000;
-    background-image:radial-gradient(var(--colour-gray) 0%, black 100%);
+    background: rgb(72,72,72);
+    background: linear-gradient(180deg, rgba(72,72,72,1) 0%, rgba(0,0,0,1) 100%);
 }
 
 iframe {
