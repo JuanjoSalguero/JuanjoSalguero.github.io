@@ -459,9 +459,28 @@ footer {
     background: linear-gradient(180deg, rgba(72,72,72,1) 0%, rgba(0,0,0,1) 100%);
 }
 
-iframe {
+.map, iframe {
     display: flex;
     width: 100%;
+}
+
+.email-location{
+    display: flex;
+    justify-content: space-evenly;
+    color: var(--colour-white);
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px var(--colour-gray) solid;
+    padding: 40px;
+}
+
+.location{
+    width: 30%;
+}
+
+.email{
+    width: 15%;
+    margin-bottom: 5px;
 }
 
 footer>p {
@@ -487,14 +506,13 @@ footer>p {
     transition: 0.3s ease-out;
 }
 
-
-footer>p>a:hover,
+.location-a:hover,
+.email-a:hover,
 .content-foo>a:hover,
 .content-foo:hover {
     transform: translateY(4px);
     color: var(--colour-yellow);
 }
-
 
 .final-logo {
     display: flex;
