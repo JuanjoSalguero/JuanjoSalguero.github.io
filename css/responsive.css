@@ -3,7 +3,7 @@
 /* ------------------------------------------------- 1400px ------------------------------------------------- */
 
 @media screen and (max-width: 1400px) {
-    .contenedor-sobre-nosotros {
+    .contenedor-sobre-mi {
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -14,11 +14,11 @@
         height: 850px;
     }
 
-    .-image-about-us {
-        width: 40%;
+    .-image-about-me {
+        width: 45%;
     }
 
-    .sobre-nosotros .contenido-textos {
+    .sobre-mi .contenido-textos {
         color: black
     }
 }
@@ -120,18 +120,18 @@
         order: 2;
     }
 
-    .contenedor-sobre-nosotros {
+    .contenedor-sobre-mi {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .sobre-nosotros .contenido-textos {
+    .sobre-mi .contenido-textos {
         width: 90%;
     }
 
-    .imagen-about-us {
-        width: 70%;
+    .imagen-about-me {
+        width: 75%;
     }
 
     .slider .slide-track {
@@ -221,12 +221,12 @@
     }
 
 
-    .imagen-about-us {
-        margin-bottom: 60px;
+    .imagen-about-me {
+        margin-bottom: 10px;
         width: 99%;
     }
 
-    .sobre-nosotros .contenido-textos {
+    .sobre-mi .contenido-textos {
         width: 95%;
     }
 

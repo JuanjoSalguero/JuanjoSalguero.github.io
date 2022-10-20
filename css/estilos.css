@@ -51,7 +51,7 @@ header {
 /* Basic styling */
 nav {
     background-color: black;
-    padding: 2px 300px;
+    padding: 2px 280px;
     position: fixed;
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -146,21 +146,21 @@ main {
     background-attachment: scroll;
 }
 
-main .sobre-nosotros {
+main .sobre-mi {
     padding: 50px 10px 0 0;
     max-width: 1250px;
 }
 
-.contenedor-sobre-nosotros {
+.contenedor-sobre-mi {
     display: flex;
     justify-content: space-between;
 }
 
-.imagen-about-us {
-    width: 35%;
+.imagen-about-me {
+    width: 40%;
 }
 
-.sobre-nosotros .contenido-textos {
+.sobre-mi .contenido-textos {
     padding-top: 50px;
     padding-bottom: 60px;
     width: 55%;
