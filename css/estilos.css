@@ -269,7 +269,7 @@ main .sobre-mi {
     }
 
     100% {
-        transform: translateX(calc(-250px * 24)); /* 24 = number of "icons" in the carousel */
+        transform: translateX(calc(-250px * 25)); /* 25 = number of "icons" in the carousel */
     }
 }
 
@@ -303,7 +303,7 @@ main .sobre-mi {
 .slider .slide-track {
     animation: scroll 40s linear infinite;
     display: flex;
-    width: calc(250px * 48); /* 24 = number of "icons" in the carousel * 2 = 48 */
+    width: calc(250px * 50); /* 25 = number of "icons" in the carousel * 2 = 50 */
 }
 
 .slider .slide {

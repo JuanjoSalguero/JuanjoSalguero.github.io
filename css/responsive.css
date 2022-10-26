@@ -137,7 +137,7 @@
     .slider .slide-track {
         animation: scroll 30s linear infinite;
         display: flex;
-        width: calc(150px * 48);
+        width: calc(150px * 50);
     }
 
     @keyframes scroll {
@@ -146,7 +146,7 @@
         }
 
         100% {
-            transform: translateX(calc(-150px * 24));
+            transform: translateX(calc(-150px * 25));
         }
     }
 
@@ -251,7 +251,7 @@
         }
 
         100% {
-            transform: translateX(calc(-110px * 24));
+            transform: translateX(calc(-110px * 25));
         }
     }
 
