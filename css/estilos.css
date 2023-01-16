@@ -218,7 +218,7 @@ main .sobre-mi {
     width: 100%;
     object-fit: cover;
     border-radius: 10px 10px 0px 0px;
-    cursor: url(/img/pointermini.png), auto;
+    cursor: url(/img/hand.png), auto;
     transition:  0.3s ease-out;
     
 }
