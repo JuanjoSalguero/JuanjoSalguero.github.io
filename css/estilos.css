@@ -2,7 +2,7 @@
 :root {
     --colour-white: #f0f0f0;
     --colour-yellow: #F8BC38;
-    --colour-gray: #484848;
+    --colour-gray: #282a30;
 }
 
 * {
@@ -442,9 +442,41 @@ img {
 
 .close:hover,
 .close:focus {
-    color: red;
+    color: rgb(177, 3, 3);
     text-decoration: none;
     cursor: pointer;
+}
+
+/* Download Buttons */
+.button {
+    display: inline-block;
+    padding: 16px 32px;
+    border-radius: 10px;
+    border: solid 3px var(--colour-yellow);
+    margin-top: 35px;
+}
+
+.btn-download {
+    font-size: 20px;
+    background: var(--colour-gray);
+    transition: background 0.5s ease-out;
+}
+
+.btn-download:hover {
+    font-weight: 600;
+    background: var(--colour-yellow);
+    color: black;
+    pointer-events: fill;    
+}
+
+.btn-download:hover>i {
+    transform: translateY(4px);
+}
+
+.btn-download>i {
+    margin-left: 10px;
+    transform: translateY(0);
+    transition: transform 0.3s ease-out;
 }
 
 /* ------------------------------------------------- FOOTER ------------------------------------------------- */
@@ -462,14 +494,13 @@ footer {
     display: flex;
     width: 100%;
 }
-
+.contact,
 .email-location{
     display: flex;
     justify-content: space-evenly;
     color: var(--colour-white);
     align-items: center;
     text-align: center;
-    border-bottom: 1px var(--colour-gray) solid;
     padding: 40px;
     background-color: var(--colour-yellow);
 }
