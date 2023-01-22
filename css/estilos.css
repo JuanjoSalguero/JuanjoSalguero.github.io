@@ -12,7 +12,7 @@
 }
 
 html {
-    scroll-behavior:smooth;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -71,7 +71,7 @@ nav ul img {
     width: 50px;
 }
 
-.logo-a{
+.logo-a {
     text-align: left;
 }
 
@@ -219,11 +219,11 @@ main .sobre-mi {
     object-fit: cover;
     border-radius: 10px 10px 0px 0px;
     cursor: url(/img/hand.png), auto;
-    transition:  0.3s ease-out;
-    
+    transition: 0.3s ease-out;
+
 }
 
-.project-image:hover{
+.project-image:hover {
     opacity: 0.7;
 }
 
@@ -249,7 +249,7 @@ main .sobre-mi {
     font-weight: 600;
     background: var(--colour-yellow);
     color: black;
-    pointer-events: fill;    
+    pointer-events: fill;
 }
 
 .btn-show-all:hover>i {
@@ -269,7 +269,8 @@ main .sobre-mi {
     }
 
     100% {
-        transform: translateX(calc(-250px * 24)); /* 25 = number of "icons" in the carousel */
+        transform: translateX(calc(-250px * 24));
+        /* 25 = number of "icons" in the carousel */
     }
 }
 
@@ -303,7 +304,8 @@ main .sobre-mi {
 .slider .slide-track {
     animation: scroll 40s linear infinite;
     display: flex;
-    width: calc(250px * 48); /* 25 = number of "icons" in the carousel * 2 = 50 */
+    width: calc(250px * 48);
+    /* 25 = number of "icons" in the carousel * 2 = 50 */
 }
 
 .slider .slide {
@@ -352,7 +354,7 @@ img {
     border-radius: 10px;
 }
 
-.cv-div>img:hover{
+.cv-div>img:hover {
     transform: scale(1.03);
 }
 
@@ -466,7 +468,7 @@ img {
     font-weight: 600;
     background: var(--colour-yellow);
     color: black;
-    pointer-events: fill;    
+    pointer-events: fill;
 }
 
 .btn-download:hover>i {
@@ -486,16 +488,18 @@ footer {
     margin: auto;
     overflow: hidden;
     width: 100%;
-    background: rgb(72,72,72);
-    background: linear-gradient(180deg, rgba(72,72,72,1) 0%, rgba(0,0,0,1) 100%);
+    background: rgb(72, 72, 72);
+    background: linear-gradient(180deg, rgba(72, 72, 72, 1) 0%, rgba(0, 0, 0, 1) 100%);
 }
 
-.map, iframe {
+.map,
+iframe {
     display: flex;
     width: 100%;
 }
+
 .contact,
-.email-location{
+.email-location {
     display: flex;
     justify-content: space-evenly;
     color: var(--colour-white);
@@ -505,11 +509,11 @@ footer {
     background-color: var(--colour-yellow);
 }
 
-.location{
+.location {
     width: 30%;
 }
 
-.email{
+.email {
     width: 15%;
     margin-bottom: 5px;
 }
@@ -545,7 +549,7 @@ footer>p {
 
 
 .location-a:hover,
-.email-a:hover{
+.email-a:hover {
     color: var(--colour-gray);
     font-weight: 800;
 }
