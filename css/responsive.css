@@ -23,6 +23,16 @@
     }
 }
 
+/* ------------------------------------------------- 1150px ------------------------------------------------- */
+
+@media all and (max-width: 1150px) {
+
+    form>input,
+    form>textarea {
+        width: 750px;
+    }
+}
+
 /* ------------------------------------------------- 960px ------------------------------------------------- */
 @media all and (min-width: 960px) {
     .menu {
@@ -44,6 +54,16 @@
 
     .toggle {
         display: none;
+    }
+
+
+}
+
+@media all and (max-width: 960px) {
+
+    form>input,
+    form>textarea {
+        width: 600px;
     }
 }
 
@@ -69,9 +89,6 @@
     .toggle {
         display: none;
     }
-}
-
-@media all and (min-width: 900px) {
 
     .menu {
         justify-content: center;
@@ -87,6 +104,7 @@
         order: 2;
     }
 }
+
 
 @media screen and (max-width:900px) {
     header {
@@ -181,7 +199,22 @@
     .cv-div img {
         width: 80%;
     }
+}
 
+/* ------------------------------------------------- 800px ------------------------------------------------- */
+@media only screen and (max-width: 800px) {
+
+    form>div{
+        width: 300px;
+    }
+    .contacto{
+        padding: 15px;
+    }
+
+    form>input,
+    form>textarea {
+        width: 400px;
+    }
 }
 
 /* ------------------------------------------------- 700px ------------------------------------------------- */
@@ -195,9 +228,20 @@
         flex-direction: column;
     }
 
-    .location-div{
+    .location-div {
         margin-bottom: 30px;
     }
+}
+
+/* ------------------------------------------------- 550px ------------------------------------------------- */
+@media only screen and (max-width: 550px) {
+
+
+    form>input,
+    form>textarea {
+        width: 250px;
+    }
+
 }
 
 /* ------------------------------------------------- 500px ------------------------------------------------- */
@@ -297,4 +341,15 @@
     .projects-section-header {
         font-size: 64px;
     }
+}
+
+/* ------------------------------------------------- 360px ------------------------------------------------- */
+@media only screen and (max-width: 360px) {
+
+
+    form>input,
+    form>textarea {
+        width: 230px;
+    }
+
 }

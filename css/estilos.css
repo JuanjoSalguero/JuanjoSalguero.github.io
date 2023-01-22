@@ -2,7 +2,7 @@
 :root {
     --colour-white: #f0f0f0;
     --colour-yellow: #F8BC38;
-    --colour-gray: #282a30;
+    --colour-gray:#222;
 }
 
 * {
@@ -492,6 +492,83 @@ footer {
     background: linear-gradient(180deg, rgba(72, 72, 72, 1) 0%, rgba(0, 0, 0, 1) 100%);
 }
 
+/* Contact */
+.contacto {
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 400px;
+}
+
+form {
+    padding: 50px;
+    margin: 12px auto;
+    border: 2px solid var(--colour-yellow);
+    border-radius: 20px;
+    position: relative;
+}
+
+form>div {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    padding: 10px 50px;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    border: 2px solid var(--colour-yellow);
+    border-radius: 20px;
+    text-align: center;
+    color: var(--colour-yellow);
+}
+
+form>div>img {
+    filter: invert(1);
+    width: 60px;
+}
+
+form>input,
+form>textarea {
+    padding: 15px;
+    margin: 15px auto;
+    border: 1px solid black;
+    color: #ddd;
+    background-color: #222;
+    border-radius: 4px;
+    display: block;
+    width: 1000px;
+}
+
+textarea::placeholder,
+input::placeholder{
+    font-size: 16px;
+}
+
+form>textarea {
+    height: 175px;
+    resize: none;
+}
+
+form>input[type="submit"] {
+    max-width: 350px;
+    height: 68px;
+    padding: 2%;
+    cursor: pointer;
+    transition: 0.35s;
+    border-color: var(--colour-yellow);
+    font-size: 20px;
+    background: #222;
+    transition: background 0.5s ease-out;
+    border-radius: 10px;
+}
+
+form>input[type="submit"]:hover {
+    font-weight: 600;
+    background: var(--colour-yellow);
+    color: black;
+    pointer-events: fill;
+}
+
 .map,
 iframe {
     display: flex;
@@ -506,7 +583,7 @@ iframe {
     align-items: center;
     text-align: center;
     padding: 40px;
-    background-color: var(--colour-yellow);
+    border-bottom: 1px solid var(--colour-gray);
 }
 
 .location {
@@ -537,20 +614,20 @@ footer>p {
 
 .content-foo {
     padding: 12px;
-    font-size: 20px;
+    font-size: 25px;
     transition: 0.3s ease-out;
 }
+.content-foo > a{
+    padding: 20px;
+}
 
-.content-foo>a:hover,
-.content-foo:hover {
-    transform: translateY(4px);
+.content-foo > a:hover{
     color: var(--colour-yellow);
 }
 
-
 .location-a:hover,
 .email-a:hover {
-    color: var(--colour-gray);
+    color: var(--colour-yellow);
     font-weight: 800;
 }
 
@@ -573,4 +650,3 @@ footer>p {
 .author {
     color: var(--colour-yellow);
 }
-
