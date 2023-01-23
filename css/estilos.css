@@ -2,7 +2,7 @@
 :root {
     --colour-white: #f0f0f0;
     --colour-yellow: #F8BC38;
-    --colour-gray:#222;
+    --colour-gray: #222;
 }
 
 * {
@@ -540,7 +540,7 @@ form>textarea {
 }
 
 textarea::placeholder,
-input::placeholder{
+input::placeholder {
     font-size: 16px;
 }
 
@@ -617,11 +617,12 @@ footer>p {
     font-size: 25px;
     transition: 0.3s ease-out;
 }
-.content-foo > a{
+
+.content-foo>a {
     padding: 20px;
 }
 
-.content-foo > a:hover{
+.content-foo>a:hover {
     color: var(--colour-yellow);
 }
 
@@ -649,4 +650,45 @@ footer>p {
 
 .author {
     color: var(--colour-yellow);
+}
+
+#button {
+    display: inline-block;
+    background-color: var(--colour-yellow);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s,
+        opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+#button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: black;
+}
+
+#button:hover {
+    cursor: pointer;
+    background-color: var(--colour-gray);
+}
+
+#button:active {
+    background-color: #555;
+}
+
+#button.show {
+    opacity: 1;
+    visibility: visible;
 }
