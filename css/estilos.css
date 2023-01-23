@@ -5,9 +5,11 @@
     --colour-gray: #222;
     --colour-black: #020202;
 
-    --languages: 24;         /* number of "icons" in the carousel */
-    --languagesx2: 48;       /* number of "icons" in the carousel * 2 */
-}    
+    --languages: 24;
+    /* number of "icons" in the carousel */
+    --languagesx2: 48;
+    /* number of "icons" in the carousel * 2 */
+}
 
 * {
     margin: 0;
@@ -60,6 +62,7 @@ nav {
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     transition: top 0.3s;
+    z-index: 1;
 }
 
 a {
@@ -133,21 +136,75 @@ header .textos-header {
 }
 
 .textos-header h1 {
-    font-size: 55px;
+    font-size: 50px;
     color: var(--colour-yellow);
 }
 
 .textos-header h2 {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 300;
     color: var(--colour-white);
 }
 
 .textos-header h3 {
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 600;
     color: var(--colour-white);
 }
+
+/* Scroll down arrow */ 
+.scroll-down {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    margin-left: -16px;
+    display: block;
+    width: 32px;
+    height: 32px;
+    border: 2px solid var(--colour-white);
+    background-size: 14px auto;
+    border-radius: 50%;
+    -webkit-animation: bounce 3s infinite 3s;
+    animation: bounce 3s infinite 3s;
+    -webkit-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+    transform: scale(1);
+}
+
+.scroll-down:before {
+    position: absolute;
+    top: calc(50% - 10px);
+    left: calc(50% - 7px);
+    transform: rotate(-45deg);
+    display: block;
+    width: 12px;
+    height: 12px;
+    content: "";
+    border: 2px solid white;
+    border-width: 0px 0 2px 2px;
+}
+
+@keyframes bounce {
+    0%,
+    100%,
+    20%,
+    50%,
+    80% {
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -webkit-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+      transform: translateY(-10px);
+    }
+    60% {
+      -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+      transform: translateY(-5px);
+    }
+  }
 
 /* ------------------------------------------------- ABOUT ME -------------------------------------------------*/
 main {
@@ -529,7 +586,7 @@ form>div {
     transform: translate(-50%, -50%);
     background-color: var(--colour-black);
     border: 2px solid var(--colour-yellow);
-    border-radius: 20px;
+    border-radius: 10px;
     text-align: center;
     color: var(--colour-yellow);
 }
@@ -556,9 +613,9 @@ input::placeholder {
     font-size: 16px;
 }
 
-.form-label{
+.form-label {
     color: var(--colour-white);
-    
+
 }
 
 form>textarea {
