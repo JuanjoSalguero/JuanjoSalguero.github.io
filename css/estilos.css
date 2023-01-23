@@ -3,6 +3,7 @@
     --colour-white: #f0f0f0;
     --colour-yellow: #F8BC38;
     --colour-gray: #222;
+    --colour-black: #020202;
 }
 
 * {
@@ -39,7 +40,7 @@ body {
 header {
     width: 100%;
     height: 977px;
-    background-color: #181719;
+    background-color: var(--colour-black);
     background: url(../img/portada.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -50,7 +51,7 @@ header {
 /* ------------------------------------------------- NAV ------------------------------------------------- */
 /* Basic styling */
 nav {
-    background-color: black;
+    background-color: var(--colour-black);
     padding: 2px 280px;
     position: fixed;
     width: 100%;
@@ -71,8 +72,10 @@ nav ul img {
     width: 50px;
 }
 
+
 .logo-a {
     text-align: left;
+    display: block;
 }
 
 .item {
@@ -174,9 +177,9 @@ main .sobre-mi {
 .projects-section {
     text-align: center;
     padding: 50px 32px;
-    background-color: black;
+    background-color: var(--colour-black);
     background-image: url(../img/marmol.jpg);
-    background-size: 100%;
+    background-size: 200%;
     background-repeat: no-repeat;
 }
 
@@ -248,7 +251,7 @@ main .sobre-mi {
 .btn-show-all:hover {
     font-weight: 600;
     background: var(--colour-yellow);
-    color: black;
+    color: var(--colour-black);
     pointer-events: fill;
 }
 
@@ -328,7 +331,7 @@ img {
 .experience {
     background: var(--colour-white);
     background-image: url(../img/mount.jpg);
-    background-size: 100%;
+    background-size: 165%;
     background-repeat: no-repeat;
     padding-bottom: 30px;
 }
@@ -467,7 +470,7 @@ img {
 .btn-download:hover {
     font-weight: 600;
     background: var(--colour-yellow);
-    color: black;
+    color: var(--colour-black);
     pointer-events: fill;
 }
 
@@ -499,10 +502,11 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 400px;
+    background-color: var(--colour-black);
 }
 
 form {
-    padding: 50px;
+    padding: 25px;
     margin: 12px auto;
     border: 2px solid var(--colour-yellow);
     border-radius: 20px;
@@ -515,7 +519,7 @@ form>div {
     left: 50%;
     padding: 10px 50px;
     transform: translate(-50%, -50%);
-    background-color: black;
+    background-color: var(--colour-black);
     border: 2px solid var(--colour-yellow);
     border-radius: 20px;
     text-align: center;
@@ -531,10 +535,10 @@ form>input,
 form>textarea {
     padding: 15px;
     margin: 15px auto;
-    border: 1px solid black;
+    border: 1px solid var(--colour-black);
     color: #ddd;
-    background-color: #222;
-    border-radius: 4px;
+    background-color: var(--colour-gray);
+    border-radius: 10px;
     display: block;
     width: 1000px;
 }
@@ -542,6 +546,11 @@ form>textarea {
 textarea::placeholder,
 input::placeholder {
     font-size: 16px;
+}
+
+.form-label{
+    color: var(--colour-white);
+    
 }
 
 form>textarea {
@@ -557,7 +566,7 @@ form>input[type="submit"] {
     transition: 0.35s;
     border-color: var(--colour-yellow);
     font-size: 20px;
-    background: #222;
+    background: var(--colour-gray);
     transition: background 0.5s ease-out;
     border-radius: 10px;
 }
@@ -565,7 +574,7 @@ form>input[type="submit"] {
 form>input[type="submit"]:hover {
     font-weight: 600;
     background: var(--colour-yellow);
-    color: black;
+    color: var(--colour-black);
     pointer-events: fill;
 }
 
@@ -652,6 +661,7 @@ footer>p {
     color: var(--colour-yellow);
 }
 
+/* Go top arrow button */
 #button {
     display: inline-block;
     background-color: var(--colour-yellow);
@@ -677,11 +687,18 @@ footer>p {
     font-size: 2em;
     line-height: 50px;
     color: black;
+    transition: 0.5s;
 }
 
 #button:hover {
     cursor: pointer;
     background-color: var(--colour-gray);
+    color: white;
+}
+
+#button:hover::after {
+    cursor: pointer;
+    color: white;
 }
 
 #button:active {

@@ -204,10 +204,11 @@
 /* ------------------------------------------------- 800px ------------------------------------------------- */
 @media only screen and (max-width: 800px) {
 
-    form>div{
-        width: 300px;
+    form>div {
+        width: 275px;
     }
-    .contacto{
+
+    .contacto {
         padding: 15px;
     }
 
@@ -235,11 +236,9 @@
 
 /* ------------------------------------------------- 550px ------------------------------------------------- */
 @media only screen and (max-width: 550px) {
-
-
     form>input,
     form>textarea {
-        width: 250px;
+        width: 350px;
     }
 
 }
@@ -333,6 +332,11 @@
     .projects-grid {
         grid-template-columns: 1fr;
     }
+
+    form>input,
+    form>textarea {
+        width: 285px;
+    }
 }
 
 /* ------------------------------------------------- 460px ------------------------------------------------- */
@@ -341,15 +345,4 @@
     .projects-section-header {
         font-size: 64px;
     }
-}
-
-/* ------------------------------------------------- 360px ------------------------------------------------- */
-@media only screen and (max-width: 360px) {
-
-
-    form>input,
-    form>textarea {
-        width: 230px;
-    }
-
 }
