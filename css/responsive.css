@@ -1,5 +1,10 @@
 /* RESPONSIVE */
 
+.root{
+    --languages: 24;         /* number of "icons" in the carousel */
+    --languagesx2: 48;       /* number of "icons" in the carousel * 2 */
+}
+
 /* ------------------------------------------------- 1400px ------------------------------------------------- */
 
 @media screen and (max-width: 1400px) {
@@ -155,7 +160,7 @@
     .slider .slide-track {
         animation: scroll 30s linear infinite;
         display: flex;
-        width: calc(150px * 48);
+        width: calc(150px * var(--languagesx2));
     }
 
     @keyframes scroll {
@@ -164,7 +169,7 @@
         }
 
         100% {
-            transform: translateX(calc(-150px * 24));
+            transform: translateX(calc(-150px * var(--languages)));
         }
     }
 
@@ -285,7 +290,7 @@
     .slider .slide-track {
         animation: scroll 20s linear infinite;
         display: flex;
-        width: calc(110px * 48);
+        width: calc(110px * var(--languagesx2));
     }
 
     @keyframes scroll {
@@ -294,7 +299,7 @@
         }
 
         100% {
-            transform: translateX(calc(-110px * 25));
+            transform: translateX(calc(-110px * var(--languages)));
         }
     }
 

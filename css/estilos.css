@@ -4,7 +4,10 @@
     --colour-yellow: #F8BC38;
     --colour-gray: #222;
     --colour-black: #020202;
-}
+
+    --languages: 24;         /* number of "icons" in the carousel */
+    --languagesx2: 48;       /* number of "icons" in the carousel * 2 */
+}    
 
 * {
     margin: 0;
@@ -272,8 +275,8 @@ main .sobre-mi {
     }
 
     100% {
-        transform: translateX(calc(-250px * 24));
-        /* 25 = number of "icons" in the carousel */
+        transform: translateX(calc(-250px * var(--languages)));
+
     }
 }
 
@@ -307,8 +310,7 @@ main .sobre-mi {
 .slider .slide-track {
     animation: scroll 40s linear infinite;
     display: flex;
-    width: calc(250px * 48);
-    /* 25 = number of "icons" in the carousel * 2 = 50 */
+    width: calc(250px * var(--languagesx2));
 }
 
 .slider .slide {
