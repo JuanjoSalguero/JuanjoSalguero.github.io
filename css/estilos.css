@@ -218,6 +218,7 @@ main {
 main .sobre-mi {
     padding: 50px 10px 0 0;
     max-width: 1250px;
+    background-color: var(--colour-black);
 }
 
 .contenedor-sobre-mi {
