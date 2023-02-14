@@ -225,7 +225,7 @@ header .textos-header {
 /* ------------------------------------------------- ABOUT ME -------------------------------------------------*/
 main {
     background: var(--colour-white);
-    background-image: url(../img/black.jpg);
+    background-image: url(../img/mount.jpg);
     background-size: 200%;
     background-repeat: no-repeat;
     background-attachment: scroll;
