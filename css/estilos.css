@@ -361,6 +361,7 @@ main .sobre-mi {
 .slider {
     height: 250px;
     margin: auto;
+    margin-top: 150px;
     overflow: hidden;
     position: relative;
 }
