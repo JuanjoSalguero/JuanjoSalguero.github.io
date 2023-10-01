@@ -6,9 +6,9 @@
     --colour-black: #020202;
 
     /* number of "icons" in the carousel */
-    --languages: 26;
+    --languages: 27;
     /* number of "icons" in the carousel * 2 */
-    --languagesx2: 52;
+    --languagesx2: 54;
 }
 
 * {
